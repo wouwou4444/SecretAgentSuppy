@@ -1,0 +1,259 @@
+html {
+    font-size: 18px;
+}
+body {
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+h3 {
+    font-size:1rem;
+}
+.principal {
+    display: flex;
+    width: 100%;
+    justify-content:  center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 960px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 1.5rem;
+    width: auto;
+    padding: 0 1rem 0 0.5rem;
+}
+
+.logo h3 {
+
+    padding: 0.66rem 0;
+}
+
+#banner {
+    display: flex;
+    background-image: url("../images/moto.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+}
+
+#banner .container {
+    margin-top: 9rem;
+    align-items: flex-end;
+}
+
+#banner .title {
+    background-color: black;
+    width: 20rem;
+    font-weight: bold;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#banner .title h3 {
+
+    width: 100%;
+}
+
+#banner .title h1 {
+    margin-top: 0.25rem;
+    font-size:2rem;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    width: 100%;    
+    background-color: firebrick;
+    justify-content: center;
+}
+header ul {
+    display: flex;
+
+    width:100%;
+    justify-content: space-between;
+}
+
+
+header ul li {
+    display: inline-block;
+    padding: 0.75rem 0;
+
+    
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+/* Products section */
+#products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#products .container {
+    justify-content: space-between;
+}
+
+.product {
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.product img {
+    height: 9rem;
+
+    padding: 2rem 0;
+    border: 4px solid black;
+}
+
+.product h3 {
+    background-color: black;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+/* #lochours section */
+
+#lochours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#lochours .container {
+    justify-content: space-between;
+}
+
+.location, .hours {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-top: 3rem;
+}
+
+.location h3, .hours h3 {
+    background-color: black;
+    padding: 1rem 0 1rem 2rem;
+}
+
+.location p, .hours p {
+    color: black;
+}
+
+/* Footer section */
+footer {
+    display: flex;
+    height: 5rem;
+    width: 100%;  
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-top: 4rem;
+}
+
+footer .container {
+    
+    justify-content: left;
+}
+
+.show-1024 {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .product {
+        width: 47%;
+    }
+
+    .no-1024 {
+        display: none;
+    }
+
+    .show-1024 {
+        display: flex;
+        width:100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .product {
+        width: 90%;
+    }
+
+    .no-470 {
+        display: none;
+    }
+
+    #banner {
+
+        height: 15rem;
+        justify-content: center;
+        align-items: baseline;
+        width: 100%;
+    }
+    #banner .container {
+        margin-top: 10rem;
+        align-items: flex-end;
+    }
+    #banner .title {
+
+        width: 100%;
+
+        padding-left: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }    
+    #banner .title h3 {
+
+        font-size: 0.77rem;
+    }
+    
+    #banner .title h1 {
+        margin-top: 0.25rem;
+        font-size:1rem;
+
+    }    
+    #lochours .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .container {
+    
+        justify-content: center;
+    }
+    .location, .hours {
+        width: 100%;
+    }
+    .hours {
+        margin-top: 0.5rem;
+    }
+
+}
